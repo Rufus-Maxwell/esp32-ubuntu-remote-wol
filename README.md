@@ -6,6 +6,11 @@ Wake an Ubuntu desktop from **suspend** using an iPhone over mobile data, with a
 
 The ESP32 also offers a local web button at `http://<ESP32_IP>/` for use on home Wi-Fi.
 
+
+## Architecture
+
+![Remote Wake-on-LAN architecture](images/architecture.svg)
+
 ## Requirements
 
 - Standard ESP32 development board (tested with an original ESP32 and 4 MB flash)
@@ -40,12 +45,18 @@ Create a **Get Contents of URL** action:
 
 Then use **Wait** followed by **Open URLs**, specifying *your own* Tailscale terminal URL. A readiness check is more reliable than a fixed wait.
 
+<img src="images/Apple%20Shortcuts.png" alt="Apple Shortcuts automation" width="350">
+
+
 ## Verify
 
 1. Use the local web button on home Wi-Fi.
 2. Independently power the ESP32, suspend Ubuntu, and verify it resumes using the local button.
 3. Publish uppercase `WAKE` through Adafruit IO; verify MQTT reception in Serial Monitor.
 4. Run the Shortcut over **mobile data** and confirm Ubuntu resumes and the Tailscale terminal can be reached.
+
+<img src="images/Tailscale.png" alt="Tailscale remote access" width="350">
+
 
 **Important:** Publishing to the feed confirms receipt at Adafruit IO, not necessarily delivery to the ESP32. MQTT logs confirm the ESP32 received the command.
 

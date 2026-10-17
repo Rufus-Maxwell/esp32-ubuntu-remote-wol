@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  width="900" height="310" viewBox="0 0 900 310">
+  <rect width="900" height="310" rx="18" fill="#111827"/>
+
+  <style>
+    .box { fill:#243247; stroke:#526580; stroke-width:1.5; }
+    .heading { fill:#ffffff; font:600 19px Arial,sans-serif; }
+    .sub { fill:#b6c7db; font:14px Arial,sans-serif; }
+    .arrow { stroke:#67e8f9; stroke-width:3; fill:none; }
+    .title { fill:#ffffff; font:600 23px Arial,sans-serif; }
+  </style>
+
+  <text x="450" y="38" text-anchor="middle" class="title">
+    Remote Ubuntu Wake-on-LAN
+  </text>
+
+  <defs>
+    <marker id="tip" markerWidth="8" markerHeight="8"
+      refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#67e8f9"/>
+    </marker>
+  </defs>
+
+  <rect class="box" x="30" y="75" width="185" height="100" rx="12"/>
+  <text class="heading" x="122" y="116" text-anchor="middle">iPhone</text>
+  <text class="sub" x="122" y="143" text-anchor="middle">Apple Shortcuts</text>
+
+  <path class="arrow" d="M215 125 H255" marker-end="url(#tip)"/>
+
+  <rect class="box" x="265" y="75" width="170" height="100" rx="12"/>
+  <text class="heading" x="350" y="116" text-anchor="middle">Adafruit IO</text>
+  <text class="sub" x="350" y="143" text-anchor="middle">HTTPS / MQTT TLS</text>
+
+  <path class="arrow" d="M435 125 H475" marker-end="url(#tip)"/>
+
+  <rect class="box" x="485" y="75" width="165" height="100" rx="12"/>
+  <text class="heading" x="567" y="116" text-anchor="middle">ESP32</text>
+  <text class="sub" x="567" y="143" text-anchor="middle">Wi-Fi / UDP WOL</text>
+
+  <path class="arrow" d="M650 125 H690" marker-end="url(#tip)"/>
+
+  <rect class="box" x="700" y="75" width="170" height="100" rx="12"/>
+  <text class="heading" x="785" y="116" text-anchor="middle">Ubuntu PC</text>
+  <text class="sub" x="785" y="143" text-anchor="middle">Resume from suspend</text>
+
+  <path class="arrow" d="M785 175 V222 H567"
+    marker-end="url(#tip)"/>
+
+  <rect class="box" x="415" y="230" width="305" height="56" rx="12"/>
+  <text class="heading" x="567" y="254" text-anchor="middle">Tailscale</text>
+  <text class="sub" x="567" y="274" text-anchor="middle">
+    Secure access to Ubuntu terminal
+  </text>
+</svg>
